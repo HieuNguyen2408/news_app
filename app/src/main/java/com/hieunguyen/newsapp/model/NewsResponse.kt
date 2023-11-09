@@ -1,4 +1,6 @@
-package com.hieunguyen.newsapp
+package com.hieunguyen.newsapp.model
+
+import com.hieunguyen.newsapp.model.Article
 
 class NewsResponse {
     data class NewsResponse(
