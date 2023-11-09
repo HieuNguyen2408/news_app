@@ -34,6 +34,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures{
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -79,6 +82,8 @@ dependencies {
     implementation ("com.squareup.retrofit2:converter-gson:$retrofit_version")
     implementation ("com.google.code.gson:gson:$gson_version")
     implementation ("com.squareup.retrofit2:adapter-rxjava2:$retrofit_version")
+    implementation ("com.squareup.okhttp3:logging-interceptor:4.5.0")
+
 
 
 
@@ -96,4 +101,7 @@ dependencies {
     val glide_version = "4.15.0"
     implementation ("com.github.bumptech.glide:glide:$glide_version")
     annotationProcessor ("com.github.bumptech.glide:compiler:$glide_version")
+    val fragment_version = "1.6.2"
+    // Kotlin
+    implementation("androidx.fragment:fragment-ktx:$fragment_version")
 }
